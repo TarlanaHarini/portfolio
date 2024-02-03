@@ -396,9 +396,6 @@ a.btn1:nth-child(2)::before{
 }
 
 
-
-
-/*services section css-------------------------------------*/
 .skills{
   background: var(--secon-bg-color);
   width:100%;
@@ -524,7 +521,7 @@ a.btn1:nth-child(2)::before{
    animation: glow 0.04s linear forwards;
   animation-delay: calc(var(--i)*0.05s);
 }
-/*-------------------------portfolio-------------------*/
+
 .Portfolio{
   background: var(--bg-color);
   width: 105%;
@@ -648,7 +645,6 @@ a.btn1:nth-child(2)::before{
   color : var(--secon-bg-color);
 }
 
-/*contact section*/
 .contact{
   background: var(--secon-bg-color);
   width: 100%;
@@ -844,7 +840,7 @@ footer a{
 
 
 
-/*Break Points*/
+
 @media(max-width:991px){
   header,
   header.sticky{
