@@ -10,7 +10,7 @@
     <style>
       /* Styles for testimonial container */
     .testimonial-container {
-        
+        background-color: var(--secon-bg-color);
         overflow: hidden;
         position: relative;
         border-radius:10px;
@@ -20,15 +20,15 @@
        align-items: center;
        border: 8px solid var(--hover-color);
        box-shadow: var(--neon-box-shadow);
-  
     }
     
     /* Styles for each testimonial */
-    .testimonial {
+     .testimonial {
         width: 33.33%; /* Show three testimonials side by side */
         float: left;
         transition: transform 0.5s ease;
         grid-gap: 10px;
+      
     }
     .testimonial h2{
       grid-gap: 10vh;
@@ -57,8 +57,6 @@
         right: 0;
     }
     </style>
-</head>
-<body>
     <header>
         <div class="Logo">Portfolio.</div>
         <ul class="navlist">
@@ -80,9 +78,10 @@
     <!----home-content--->
     <section id="home" class="home"></section>
     <div class="home-content" scroll-Scale>
+      <div class="img-about">
+        <img align ="right" src="img.jpeg" alt="" height="400" width="400">
+        </div>
         <h1>Hi, I'm Tarlana Harini</h1>
-      
-          </div>
             <div class="change-text">
         <h3> And I'm</h3>
         <p>willing up to take on new challenges and help in the organisation's growth as well as self-growth.</p>
@@ -110,8 +109,11 @@
   </section>
     <!------about----->
     <section id="about" class="about">
-      <div class="img-about">
-        <img align ="left" src="img.jpeg" alt="" height="400" width="400">
+        <div class="vedio-container">
+            <video width="400" height="440" controls>
+      <source src="./introduction vedio.mp4" type="video/mp4">
+    </video>
+    </div>
       <div class="about-content">
         <span>Let me introduce myself</span>
         <h2>About me</h2>
@@ -123,7 +125,6 @@
           <a href="#" class="btn1">Read more!</a>
         </div>
       </div>
-  </div>
     </section>
  
  <!--------skill section------->
@@ -267,7 +268,6 @@
        <h2>Contact Me</h2>
      </div>
   
-
      <form name="submit-to-google-sheet" target="_blank">
         <input type="text" name="Name" placeholder="Your Name">
         <input type="text" name="Email" placeholder="Your Email">
@@ -280,30 +280,32 @@
      </form>
      <span id="msg"></span>
      </section>
-     <section>
-      
-     <div class="testimonial-container">
-      <div class="testimonial">
-          <h2>Testimonial 1</h2>
-          <p>I've been working with these guys for a long time and i can say that my house in the perfect hands.</p>
-      </div>
-      <div class="testimonial">
-          <h2>Testimonial 2</h2>
-          <p>Working with harini is just great,every problem in my house is solved in a matter of days.</p>
-      </div>
-      <div class="testimonial">
-          <h2>Testimonial 3</h2>
-          <p>I am happy to see this webiste.</p>
-      </div>
-  </div>
-  </section>
+     
+
   
- <!-----footer website------>
- <footer>
-     <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
- </footer>
+ <!-----tesstimonial------->
+ <section>
+  <div class="testimonial-container">
+   <div class="testimonial">
+       <h2>Testimonial 1</h2>
+       <p>I've been working with these guys for a long time and i can say that my house in the perfect hands.</p>
+   </div>
+   <div class="testimonial">
+       <h2>Testimonial 2</h2>
+       <p>Working with harini is just great,every problem in my house is solved in a matter of days.</p>
+   </div>
+   <div class="testimonial">
+       <h2>Testimonial 3</h2>
+       <p>I am happy to see this webiste.</p>
+   </div>
+</div>
+</section>
  <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
+    <!------footer------>
+    <footer>
+      <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+  </footer>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbx1TC2QMhJJrm-zo7QmSe1LPYsWL35q5ZzmBqAlldCzzOeIswDkhMZV-ETYlmgf2pBC/exec'
       const form = document.forms['submit-to-google-sheet']
