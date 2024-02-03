@@ -46,7 +46,7 @@ body{
   height: 250px;
   background-size: cover;
   margin-top: -50px;
-  background-color: var(--bg-color);
+  background-color: var(--secon-bg-color);
 }
 header{
   position: fixed;
@@ -276,45 +276,46 @@ body{
   margin-top: 7rem;
   background-color: var(--bg-color);
   min-height: 100vh;
-  width: 100%;
+  width: 110%;
   height: 100%;
+  margin-left: -40px;
+  
 }
-.paragraph1{
-  margin-left: 10px;
+.about-content .paragraph1{
+  margin-left: 80px;
   display: inline-block;
   width: 40%;
   margin-top: -120px;
+  font-size: 15px;
+  margin-top: -5px;
 }
-.about .img-about{
-  text-align: center;
-  position: relative;
-
-}
-.about .img-about img{
+.home-content .img-about img{
   max-width: 270%;
   max-height: 100%;
-  margin-top: 50px;
+  margin-top: -50px;
+  margin-left: -100px;
+ 
 }
 .about-content span{
   color : #fdfdfd;
   font-weight: 200;
-  font-size: 40px;
-  letter-spacing: 2px;
+  font-size: 30px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin-left: 10px;
+  margin-left: 80px;
   display: inline-block;
   width: 60%;
-  margin-top: -10px;
+  margin-top: -100px;
 }
 .about-content h2{
   color: var(--hover-color);
-  font-weight: 200;
+  font-weight: 100;
   font-size: 3rem;
   letter-spacing: 2px;
   text-transform: 2px;
   width: 60%;
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 80px;
 }
 .about-content h3{
   color: var(--hover-color);
@@ -324,7 +325,8 @@ body{
   text-transform: 2px;
   width: 60%;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: -20px;
+  margin-left: 80px;
 }
 .about-content p{
   font-size: 1.5rem;
@@ -333,8 +335,15 @@ body{
   width: 60%;
   margin-top: 40px;
 }
+.about .vedio-container{
+  border-radius: 50px;
+  border: 1px solid #12f7ff;
+  overflow:auto;
+  width:170%;
+
+}
 .bt-box{
-  margin-left: 1000px;
+  margin-left: -100px;
 }
 
 .bt-box a.btn1 {
@@ -393,20 +402,20 @@ a.btn1:nth-child(2)::before{
 .skills{
   background: var(--secon-bg-color);
   width:100%;
-  margin-left: -70%;
+
 }
 .main-text span{
   
-  margin-left: 500px;
+  margin-left: 700px;
   font-size: 70px;
 }
 .main-text h2{
-  margin-left: 325px;
+  margin-left: 355px;
   font-size:60px;
   margin-top: -10px;
 } 
 .skill-main{
-  width:100%;
+  width:80%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-row-gap: 30px;
@@ -517,7 +526,8 @@ a.btn1:nth-child(2)::before{
 /*-------------------------portfolio-------------------*/
 .Portfolio{
   background: var(--bg-color);
-  
+  width: 105%;
+  margin-left: -30px;
 }
 .main-text1 h4{
   margin-left: 400px;
@@ -687,11 +697,7 @@ a.btn1:nth-child(2)::before{
     display: block;
     font-size: 50px;
   }
-.vedio .container{
-  width: 100%;
-  height: 300px;
-  overflow: auto;
-}
+  
 /* footer*/
 footer{
   background: var(--bg-color);
@@ -1041,7 +1047,7 @@ footer a{
 
 
 }
-@media(max-width:420px){
+@media(max-width:320px){
   html{
     font-size: 80%;
   }
@@ -1052,12 +1058,39 @@ footer a{
     font-size: .6rem;
 
   }
+  .about{
+    width:900px;
+  }
+  .about .vedio-container{
+    border-radius: 5px;
+    border: 9px solid #12f7ff;
+    overflow:auto;
+    width:700%;
+    margin-top: -890px;
+  }
+  .about-content .paragraph1{
+    margin-left: -600px;
+    margin-top: 900px;
+  }
+  .about-content span{
+    margin-left: -350px;
+  }
+  .about-content h2{
+    font-size: 10px;
+  }
+  .skill-left .skill-bar{
+    width: 400px;
+  }
+  .Portfolio{
+    width:900px;
+  }
   .main-text1 h4{
     margin-left: 25px;
-    font-size: 60px;
+    font-size: 45px;
   }
   .main-text1 h3{
-    margin-left: 20px;
+    margin-left: 25px;
+    font-size: 45px;
   }
   .main-text1 span{
     margin-left: 25px;
@@ -1067,26 +1100,5 @@ footer a{
     margin-left: 25px;
     font-size: 40px;
   }
-  .container .filter-buttons .btn1 {
-    font-size: 1.2rem;
-  }
-  .container .filter-buttons {
-    font-size: 1.2rem;
-  
-}
-.port-box{
-  width: 780px;
-  height: 220px;
-}
-.port-content h3{
-  font-size: .4rem;
-}
-@media(max-width:360px){
-  .main-text3 span{
-    margin-left: -460px;
-  }
-  .main-text3 h2{
-    margin-left: -460px;
-  }
-}
+ 
 }
