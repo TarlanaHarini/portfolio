@@ -40,7 +40,7 @@
 body{
   font-family: 'poppins' sans-serif;
   color: var(--text-color);
-  background-image: url("C:\\Users\\yaswa\\OneDrive\\Desktop\\logo\\img5.jpeg");
+  background-color: var(--bg-color);
   background-repeat:no-repeat;
   margin-bottom: 550px;
   background-position: center;
