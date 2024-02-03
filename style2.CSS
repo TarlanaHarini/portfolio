@@ -402,6 +402,7 @@ a.btn1:nth-child(2)::before{
 .skills{
   background: var(--secon-bg-color);
   width:100%;
+  margin-left: 100px;
 
 }
 .main-text span{
