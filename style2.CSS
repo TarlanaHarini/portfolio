@@ -40,13 +40,13 @@
 body{
   font-family: 'poppins' sans-serif;
   color: var(--text-color);
-  background-color: var(--bg-color);
   background-repeat:no-repeat;
   margin-bottom: 550px;
   background-position: center;
   height: 250px;
   background-size: cover;
   margin-top: -50px;
+  background-color: var(--bg-color);
 }
 header{
   position: fixed;
