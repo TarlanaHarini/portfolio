@@ -392,7 +392,8 @@ a.btn1:nth-child(2)::before{
 /*services section css-------------------------------------*/
 .skills{
   background: var(--secon-bg-color);
-  
+  width:100%;
+  margin-left: -70%;
 }
 .main-text span{
   
