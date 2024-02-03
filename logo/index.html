@@ -7,6 +7,56 @@
     <link rel='stylesheet' href="style2.CSS">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script defer src="activePage.js"></script>
+    <style>
+      /* Styles for testimonial container */
+    .testimonial-container {
+        
+        overflow: hidden;
+        position: relative;
+        border-radius:10px;
+        overflow: hidden;
+        background: #292e33;
+       display: flex;
+       align-items: center;
+       border: 8px solid var(--hover-color);
+       box-shadow: var(--neon-box-shadow);
+  
+    }
+    
+    /* Styles for each testimonial */
+    .testimonial {
+        width: 33.33%; /* Show three testimonials side by side */
+        float: left;
+        transition: transform 0.5s ease;
+        grid-gap: 10px;
+    }
+    .testimonial h2{
+      grid-gap: 10vh;
+      }
+    
+    
+    /* Styles for slider buttons */
+    .slider-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        z-index: 1;
+    }
+    
+    /* Styles for previous button */
+    .prev {
+        left: 0;
+    }
+    
+    /* Styles for next button */
+    .next {
+        right: 0;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -19,6 +69,11 @@
             <li><a href="#contact" >Contact Me</a></li>
             </ul>
             <div id="menu-icon" class="bx bx-menu"></div>
+            <div class="counter">
+                <!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=11163131&style=0009&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>       
+            </div>
     </header>
 
 
@@ -202,6 +257,7 @@
       </div>
     </div>
   </div>
+
  </section>
 
  <!------contact----------->
@@ -223,7 +279,23 @@
           </div>
      </form>
      <span id="msg"></span>
-  </section>
+     </section>
+     <div class="testimonial-container">
+      <div class="testimonial">
+          <h2>Testimonial 1</h2>
+          <p>I've been working with these guys for a long time and i can say that my house in the perfect hands.</p>
+      </div>
+      <div class="testimonial">
+          <h2>Testimonial 2</h2>
+          <p>Working with harini is just great,every problem in my house is solved in a matter of days.</p>
+      </div>
+      <div class="testimonial">
+          <h2>Testimonial 3</h2>
+          <p>I am happy to see this webiste.</p>
+      </div>
+  </div>
+  
+  
  <!-----footer website------>
  <footer>
      <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
@@ -247,6 +319,25 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+          let slides = document.getElementsByClassName("testimonial");
+          for (let i = 0; i < slides.length; i++) {
+              slides[i].style.transform = `translateX(${(i - slideIndex) * 100}%)`;
+          }
+          slideIndex++;
+          if (slideIndex >= slides.length) { slideIndex = 0; }
+          setTimeout(showSlides, 3000); // Change slide every 3 seconds
+      }
+  
+      function moveSlider(direction) {
+          slideIndex += direction;
+          showSlides();
+      }
+  </script>
+  
 </body>
 </html>
 
