@@ -671,36 +671,45 @@ a.btn1:nth-child(2)::before{
   width: 100%;
 
 }
-.contact-right h1{
-  font-size: 30px;
-  margin-left: 450px;
-  color:#12f7ff
-}
- .contact-right  p{
-  font-size: 30px;
-  margin-left: 40px
-}
-.contact-right  h3{
-  font-size: 30px;
-  margin-left: 700px;
-  margin-top: 60px;
-}
-.contact-right  h2{
-  font-size: 30px;
-  margin-left: 700px;
-  color: #12f7ff;
+.main-text3{
+  font-size: 50px;
+  margin-left: 400px;
 }
 
-.contact-left{
+    .contact-info {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .contact-info a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .contact-info p::before {
+        content: '\1F4E7'; /* Unicode character for mail symbol */
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .contact-info p:last-child::before {
+        content: '\1F4DE'; /* Unicode character for phone symbol */
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+.contact form{
   text-align: center;
   max-height: 50rem;
   margin: 1rem auto;
   margin-bottom: 3rem;
-  width: 40%;
-  margin-left: -350px;
-  margin-top: -200px;
+  width: 50%;
+  margin-left: -150px;
 }
-
+.contact-info{
+  margin-left: 450px;
+}
 .contact form input,
 .contact form textarea{
   width: 100%;
@@ -726,7 +735,6 @@ a.btn1:nth-child(2)::before{
   font-size: 1rem;
   margin-left: 400px;
 }
-
  #msg{
     background: #250821;
     margin-top: -10px;
@@ -734,7 +742,6 @@ a.btn1:nth-child(2)::before{
     display: block;
     font-size: 50px;
   }
-  
 /* footer*/
 footer{
   background: var(--bg-color);
@@ -1083,7 +1090,7 @@ footer a{
 
 
 }
-@media(max-width:320px){
+@media(max-width:420px){
   html{
     font-size: 80%;
   }
