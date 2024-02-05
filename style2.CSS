@@ -489,6 +489,15 @@ a.btn1:nth-child(2)::before{
   width: 85%;
   animation: c 5s;
 }
+.skill-bar .bar .python{
+  width:85%;
+  animation : python 3s;
+}
+.skill-bar .bar .sql{
+  width:75%;
+  animation : sql 3s;
+}
+
 /* skill right*/
 .porfessional{
   display: grid;
@@ -521,21 +530,15 @@ a.btn1:nth-child(2)::before{
 }
 .circle{
   width: 100%;
-  height: 120px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 3px solid #12f7ff;
-}
-.circle .points{
-  width: 5px;
-  height: 10px;
-  background-color: var(--bg-color);
-  position: absolute;
-  border-radius: 3px;
-  transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
   
 }
+
+
 
 .points.marked{
    animation: glow 0.04s linear forwards;
@@ -590,7 +593,7 @@ a.btn1:nth-child(2)::before{
 .portfolio-gallery{
   display:flex;
   margin-left: 230px;
-  grid-gap: 10px;
+  grid-gap: 69px;
   height: 100%;
   width: 70%;
   margin-top: 60px;
@@ -673,7 +676,7 @@ a.btn1:nth-child(2)::before{
 }
 .main-text3{
   font-size: 50px;
-  margin-left: 400px;
+  margin-left: 450px;
 }
 
     .contact-info {
@@ -738,9 +741,9 @@ a.btn1:nth-child(2)::before{
  #msg{
     background: #250821;
     margin-top: -10px;
-    margin-left: 340px;
-    display: block;
-    font-size: 50px;
+    margin-left: 450px;
+    
+    font-size: 20px;
   }
 /* footer*/
 footer{
@@ -1101,6 +1104,9 @@ footer a{
     font-size: .6rem;
 
   }
+  #menu-icon{
+    margin-left: -100px;
+  }
   .about{
     width:900px;
   }
@@ -1108,12 +1114,13 @@ footer a{
     border-radius: 5px;
     border: 9px solid #12f7ff;
     overflow:auto;
-    width:700%;
-    margin-top: -890px;
+    width:680%;
+    margin-top: -830px;
   }
   .about-content .paragraph1{
     margin-left: -350px;
     margin-top: 430px;
+    width:100%;
   }
   .about-content span{
     margin-left: -320px;
@@ -1122,11 +1129,41 @@ footer a{
   .about-content h2{
     font-size: 10px;
   }
+  .skills{
+    width:30%;
+  }
   .skill-left .skill-bar{
-    width: 400px;
+    width: 350px;
+  }
+  .main-text h2{
+    margin-left: -150px;
   }
   .Portfolio{
-    width:900px;
+    width:600%;
+  }
+  .portfolio-gallery{
+    
+    width: 12%;
+    grid-gap:10px;
+  }
+  .main-text1 h1{
+      margin-left: 10px;
+      font-size:30px;
+  }
+  .main-text1 h3{
+      margin-left: 10px;
+      font-size:30px;
+  }
+  .main-text1 h4{
+     margin-left: 10px;
+     font-size:30px;
+  }
+  .main-text1 span{
+    margin-left: 10px;
+    font-size:30px;
+  }
+  .contact-info p{
+    margin-left: -380px;
   }
   .main-text3 h1{
     margin-left: 25px;
@@ -1136,13 +1173,17 @@ footer a{
     margin-left: 25px;
     font-size: 45px;
   }
-  .main-text3 span{
-    margin-left: 25px;
+  .main-text3 {
+    margin-left: 340px;
     font-size: 45px;
   }
   .main-text3 h2{
     margin-left: 25px;
     font-size: 40px;
+  }
+  .contact form{
+    width:100%;
+    margin-left: -400px;
   }
   .contact-right h1{
     font-size: 30px;
@@ -1162,15 +1203,6 @@ footer a{
     font-size: 30px;
     margin-left: 700px;
     color: #12f7ff;
-  }
-  .contact-left{
-    text-align: center;
-    max-height: 50rem;
-    margin: 1rem auto;
-    margin-bottom: 3rem;
-    width: 40%;
-    margin-left:-150px;
-    margin-top: -200px;
   }
   
 }
