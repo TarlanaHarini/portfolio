@@ -310,7 +310,7 @@ body{
 
 }
 .home-content .img-about img{
-  max-width: 270%;
+  width: 30%;
   max-height: 100%;
   margin-top: -50px;
   margin-left: -100px;
