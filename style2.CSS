@@ -356,10 +356,10 @@ body{
   margin-top: 40px;
 }
 .about .vedio-container{
-  border-radius: 50px;
+  border-radius: 20px;
   border: 1px solid #12f7ff;
   overflow:auto;
-  width:170%;
+  width:200%;
 
 }
 .bt-box{
